@@ -1,6 +1,6 @@
-const botSettings = require("./botsettings.json");
+const botSettings = require("process.env");
 const Discord = require("discord.js");
-const prefix = process.env.BOT_TOKEN;
+const prefix = process.env.prefix;
 
 client.on("ready", async () => {
 	console.log(`Bot cargado! ${bot.user.username}`);

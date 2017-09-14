@@ -1,10 +1,8 @@
 const botSettings = require("./botsettings.json");
 const Discord = require("discord.js");
-const prefix = botSettings.prefix;
+const prefix = process.env.BOT_TOKEN;
 
-const bot = new Discord.Client({disableEveryone: true});
-
-bot.on("ready", async () => {
+client.on("ready", async () => {
 	console.log(`Bot cargado! ${bot.user.username}`);
 	
 	try {
@@ -15,7 +13,7 @@ bot.on("ready", async () => {
 	}
 });
 
-bot.on("message", async message => {
+client.on("message", async message => {
 	if(message.author.bot) return;
 	if(message.channel.type ==="dn") return;
 	

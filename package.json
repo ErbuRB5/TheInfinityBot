@@ -1,0 +1,15 @@
+{
+  "name": "The Infinity Bot",
+  "version": "0.0.1",
+  "description": "El bot de The Infinity Community.",
+  "main": "bot.js",
+  "dependencies": {
+    "discord.js": "^11.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Erbu",
+  "license": "ISC"
+}
